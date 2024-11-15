@@ -6,4 +6,3 @@
 ----
 
 ### English Explication Version
-----

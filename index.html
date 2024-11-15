@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando os conhecimentos</title>
+    <title>Formulário de Criação de Loja</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -21,22 +21,22 @@
                         <li class="step active">
                             <span>1</span>
                             <p>
-                                Personal <br>
-                                <span>25 secs to complete</span>
+                                Iniciais <br>
+                                <span>10s para completar</span>
                             </p>
                         </li>
                         <li class="step">
                             <span>2</span>
                             <p>
-                                Contact <br>
-                                <span>60 secs to complete</span>
+                                Adicionais <br>
+                                <span>20s para completar</span>
                             </p>
                         </li>
                         <li class="step">
                             <span>3</span>
                             <p>
-                                Security <br>
-                                <span>30 secs to complete</span>
+                                Contrato <br>
+                                <span>3m para completar</span>
                             </p>
                         </li>
                     </ul>
@@ -44,28 +44,24 @@
                 <form action="">
                     <div class="form-one form-step active">
                         <div class="bg-svg"></div>
-                        <h2>Personal Informations</h2>
-                        <p>Enter your Personal Informations Correctly</p>
+                        <h2>Informações Iniciais</h2>
+                        <p>Prezado (a), preencha correctamente!</p>
                         <div>
-                            <label>Firt Name</label>
-                            <input type="text" placeholder="e.g. Swelton" />
+                            <label>Nome da Loja</label>
+                            <input type="text" placeholder="ex.: Swelton Electrónicos" />
                         </div>
                         <div>
-                            <label>Last Name</label>
-                            <input type="text" placeholder="e.g. João" />
+                            <label>Breve Descrição</label>
+                            <input type="text" placeholder="ex.: É uma loja de vendas de diversos materiais electrónicos" />
                         </div>
-                        <div class="birt">
-                            <label">Date of Birth</label>
-                            <div class="grouping">
-                                <input type="text" pattern="[0-9]*" name="day" value="" min="0" max="31" placeholder="DD">
-                                <input type="text" pattern="[0-9]*" name="month" value="" min="0" max="12" placeholder="MM">
-                                <input type="text" pattern="[0-9]*" name="year" value="" min="0" max="2050" placeholder="YYYY">
-                            </div>
+                        <div>
+                            <label>Tambnail (Imagem de Capa)</label>
+                            <input type="file" />
                         </div>
                     </div>
                     <div class="form-two form-step">
                         <div class="bg-svg"></div>
-                        <h2>Contact</h2>
+                        <h2>Informações Adicionais</h2>
                         <div>
                             <label for="">Phone</label>
                             <input type="tel" placeholder="+244 xxx xxx xxx">
@@ -92,38 +88,114 @@
                         <div>
                             <label for="">Country</label>
                             <select name="country" id="country">
-                                <option value="">Please select</option>
+                                <option value="">Selecione...</option>
                                 <option value="Angola">Angola</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-three form-step">
                         <div class="bg-svg"></div>
-                        <h2>Security</h2>
-                        <div>
-                            <label for="">Email</label>
-                            <input type="email" placeholder="Your email address">
-                        </div>
-                        <div>
-                            <label for="">Username</label>
-                            <input type="text" placeholder="Username">
-                        </div>
-                        <div>
-                            <label for="">Password</label>
-                            <input type="password" placeholder="Password">
-                        </div>
-                        <div>
-                            <input type="password" placeholder="Confirm password">
+                        <h2>Contrato</h2>
+                        
+                        <div class="terms-container">
+                            <h3>Termos de Uso e Licença para Vendedores</h3>
+                            <section class="terms-section">
+                                <h4>1. Introdução</h4>
+                                <p>
+                                    Bem-vindo à nossa plataforma de e-commerce! Ao criar sua subloja e utilizar nossos serviços, você (doravante denominado "Vendedor") concorda com os Termos de Uso e Licença aqui estabelecidos. Leia atentamente antes de continuar. 
+                                    A utilização da plataforma é totalmente gratuita, mas é regida por regras para garantir uma experiência justa e segura para todos.
+                                </p>
+                            </section>
+                            
+                            <section class="terms-section">
+                                <h4>2. Condições de Uso da Plataforma</h4>
+                                <h5>2.1. Gratuidade do Serviço</h5>
+                                <ul>
+                                    <li>A criação e manutenção de sublojas são oferecidas de forma gratuita. Não cobramos taxas de adesão ou uso padrão.</li>
+                                    <li>A plataforma pode, no futuro, implementar serviços premium opcionais, que serão devidamente informados.</li>
+                                </ul>
+                                <h5>2.2. Cadastro e Veracidade de Informações</h5>
+                                <ul>
+                                    <li>O Vendedor deve fornecer informações reais e completas no momento do cadastro.</li>
+                                    <li>A responsabilidade pela atualização e veracidade dos dados é exclusiva do Vendedor.</li>
+                                </ul>
+                            </section>
+                            
+                            <section class="terms-section">
+                                <h4>3. Direitos e Obrigações da Plataforma</h4>
+                                <h5>3.1. Garantia de Serviço</h5>
+                                <ul>
+                                    <li>A plataforma se compromete a oferecer suporte técnico e funcional para o Vendedor, garantindo um ambiente seguro e estável.</li>
+                                    <li>No entanto, a plataforma não é responsável por interrupções temporárias de serviços decorrentes de manutenção, atualizações ou eventos externos.</li>
+                                </ul>
+                                <h5>3.2. Monitoramento e Penalidades</h5>
+                                <ul>
+                                    <li>A plataforma reserva-se o direito de revisar e, se necessário, remover qualquer conteúdo que viole os Termos de Uso.</li>
+                                    <li>Nenhuma informação pessoal será compartilhada com terceiros sem o consentimento explícito, exceto quando exigido por lei.</li>
+                                </ul>
+                            </section>
+                            
+                            <section class="terms-section">
+                                <h4>4. Política de Privacidade e Dados</h4>
+                                <ul>
+                                    <li>O Vendedor concorda que os dados fornecidos sejam utilizados para fins de operação da plataforma, melhorias de serviço, e cumprimento de obrigações legais.</li>
+                                    <li>Nenhuma informação pessoal será compartilhada com terceiros sem o consentimento explícito, exceto quando exigido por lei.</li>
+                                </ul>
+                            </section>
+
+                            <section class="terms-section">
+                                <h4>5. Propriedade Intelectual</h4>
+                                <h5>5.1. Licença de Uso</h5>
+                                <ul>
+                                    <li>O Vendedor concede à plataforma uma licença limitada para usar as informações, imagens e descrições de seus produtos exclusivamente para promover e operar a subloja.</li>
+                                </ul>
+                                <h5>5.2. Proteção de Direitos</h5>
+                                <ul>
+                                    <li>A plataforma mantém todos os direitos sobre sua marca, design, software e outros elementos protegidos por leis de propriedade intelectual.</li>
+                                </ul>
+                            </section>
+
+                            <section class="terms-section">
+                                <h4>6. Restrições e Proibições</h4>
+                                <ul>
+                                    <li>É vedado ao Vendedor utilizar a plataforma para:</li>
+                                    <li>Publicar conteúdo ofensivo, discriminatório ou inapropriado.</li>
+                                    <li>Realizar práticas fraudulentas ou enganosas.</li>
+                                    <li>Manipular avaliações, comentários ou classificações de produtos.</li>
+                                </ul>
+                            </section>
+                            <section class="terms-section">
+                                <h4>7. Atualizações nos Termos</h4>
+                                <ul>
+                                    <li>Estes Termos de Uso podem ser atualizados periodicamente. O Vendedor será notificado sobre mudanças relevantes, e o uso contínuo da plataforma implicará aceitação das novas condições.</li>
+                                </ul>
+                            </section>
+                            <section class="terms-section">
+                                <h4>8. Encerramento da Loja</h4>
+                                <ul>
+                                    <li>O Vendedor pode encerrar sua subloja a qualquer momento, mediante solicitação.</li>
+                                    <li>A plataforma pode encerrar sublojas em casos de violação dos Termos ou inatividade prolongada.</li>
+                                </ul>
+                            </section>
+                            <section class="terms-section">
+                                <h4>9. Contato e Suporte</h4>
+                                <ul>
+                                    <li>Caso tenha dúvidas ou precise de suporte, entre em contato conosco pelo email <a href="mailto:suporte@muitomais.com">suporte@muitomais.com</a> ou pelo nosso canal oficial na plataforma.</li>
+                                </ul>
+                            </section>
                         </div>
                         <div class="checkbox">
-                            <input type="checkbox">
-                            <label for="">Receive our news letter and special offers</label>
+                            <input type="checkbox" id="confirm-read-contract">
+                            <label for="confirm-read-contract">Eu li e aceito os Termos de Uso e Licença.</label>
                         </div>
                     </div>
+                    
+                    
+                    
                     <div class="btn-group">
-                        <button type="button" class="btn-prev" disabled>Back</button>
-                        <button type="button" class="btn-next">Next Step</button>
-                        <button type="button" class="btn-submit">Submit</button>
+                        <button type="button" class="btn-prev" disabled>Anterior</button>
+                        <button type="button" class="btn-next">Próximo</button>
+                        <button type="button" class="btn-submit">Criar a Loja</button>
                     </div>
                 </form>
             </div>

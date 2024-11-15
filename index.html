@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando os conhecimentos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="site" id="site">
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo">
+                        <a href="/">
+                            <span>muito</span>
+                            Mais
+                        </a>
+                    </div>
+                    <ul class="progress-steps">
+                        <li class="step active">
+                            <span>1</span>
+                            <p>
+                                Personal <br>
+                                <span>25 secs to complete</span>
+                            </p>
+                        </li>
+                        <li class="step">
+                            <span>2</span>
+                            <p>
+                                Contact <br>
+                                <span>60 secs to complete</span>
+                            </p>
+                        </li>
+                        <li class="step">
+                            <span>3</span>
+                            <p>
+                                Security <br>
+                                <span>30 secs to complete</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <form action="">
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                        <h2>Personal Informations</h2>
+                        <p>Enter your Personal Informations Correctly</p>
+                        <div>
+                            <label>Firt Name</label>
+                            <input type="text" placeholder="e.g. Swelton" />
+                        </div>
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" placeholder="e.g. João" />
+                        </div>
+                        <div class="birt">
+                            <label">Date of Birth</label>
+                            <div class="grouping">
+                                <input type="text" pattern="[0-9]*" name="day" value="" min="0" max="31" placeholder="DD">
+                                <input type="text" pattern="[0-9]*" name="month" value="" min="0" max="12" placeholder="MM">
+                                <input type="text" pattern="[0-9]*" name="year" value="" min="0" max="2050" placeholder="YYYY">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Contact</h2>
+                        <div>
+                            <label for="">Phone</label>
+                            <input type="tel" placeholder="+244 xxx xxx xxx">
+                        </div>
+                        <div>
+                            <label for="">Address</label>
+                            <input type="text" placeholder="Street Address">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="App, Suite, Building">
+                        </div>
+                        <div>
+                            <label for="">City</label>
+                            <input type="text" placeholder="City">
+                        </div>
+                        <div>
+                            <label for="">State</label>
+                            <input type="text" placeholder="State/Province">
+                        </div>
+                        <div>
+                            <label for="">Zip Code</label>
+                            <input type="text" placeholder="Postal/Zip Code">
+                        </div>
+                        <div>
+                            <label for="">Country</label>
+                            <select name="country" id="country">
+                                <option value="">Please select</option>
+                                <option value="Angola">Angola</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-three form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Security</h2>
+                        <div>
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Your email address">
+                        </div>
+                        <div>
+                            <label for="">Username</label>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div>
+                            <label for="">Password</label>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Confirm password">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label for="">receive our news letter and special offers</label>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" disabled>Back</button>
+                        <button type="button" class="btn-next">Next Step</button>
+                        <button type="button" class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
